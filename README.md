@@ -193,6 +193,45 @@ espDevice.provision(final String ssid, final String passphrase, final ProvisionL
 #### Enable / Disable QR code support
 QR code support can be enable/disable by setting true/false value of `isQrCodeSupported` filed available in `app/build.gradle`.
 
+## GitHub Actions 编译 Release APK
+
+仓库自带两个工作流(`.github/workflows/`):
+
+| 工作流 | 触发条件 | 产物 |
+|---|---|---|
+| Build Debug APK | 推送任意分支 / 手动运行 | Debug APK(Artifact) |
+| Build Release APK | 推送 `v*` 标签 / 手动运行 | 签名 Release APK(Artifact + GitHub Release) |
+
+### 首次配置签名 Secrets(必做一次)
+
+Release APK 需要签名后才能安装。签名信息存放在 GitHub Secrets 中,不进入仓库。到仓库页面
+**Settings → Secrets and variables → Actions → New repository secret** 添加以下 4 个:
+
+| Secret 名称 | 值 |
+|---|---|
+| `KEYSTORE_BASE64` | keystore 文件的 base64 文本(`base64 -w 0 release.keystore`) |
+| `KEYSTORE_PASSWORD` | keystore 密码 |
+| `KEY_ALIAS` | key 别名 |
+| `KEY_PASSWORD` | key 密码 |
+
+生成新 keystore 的命令:
+
+```
+keytool -genkeypair -v -keystore release.keystore -alias esp-prov-release \
+  -keyalg RSA -keysize 2048 -validity 10950
+```
+
+签名配置在 `app/build.gradle` 中通过环境变量(`KEYSTORE_FILE` / `KEYSTORE_PASSWORD` / `KEY_ALIAS` / `KEY_PASSWORD`)注入,本地构建不设置这些变量时自动跳过签名,不受影响。
+
+### 发布新版本
+
+```
+git tag v2.4.5
+git push origin v2.4.5
+```
+
+推送标签后自动编译签名,并创建 GitHub Release 附带 APK(`esp-provisioning-v2.4.5.apk`)。
+
 ## License  
   
 

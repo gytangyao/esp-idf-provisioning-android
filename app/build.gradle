@@ -10,6 +10,13 @@ def getGitHash = { ->
     return stdout.toString().trim()
 }
 
+// 签名信息从环境变量读取(CI 注入);未设置时跳过签名,本地构建不受影响
+// 注意:变量名不能与签名 DSL 属性同名,否则 Groovy 会把 setter 调用解析成对 String 的调用
+def signingKeystoreFile = System.getenv('KEYSTORE_FILE')
+def signingStorePassword = System.getenv('KEYSTORE_PASSWORD')
+def signingKeyAlias = System.getenv('KEY_ALIAS')
+def signingKeyPassword = System.getenv('KEY_PASSWORD')
+
 android {
 
     compileSdkVersion 35
@@ -24,11 +31,25 @@ android {
         consumerProguardFiles "consumer-proguard-rules.pro"
     }
 
+    signingConfigs {
+        release {
+            if (signingKeystoreFile != null) {
+                storeFile file(signingKeystoreFile)
+                storePassword signingStorePassword
+                keyAlias signingKeyAlias
+                keyPassword signingKeyPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled true
             debuggable false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            if (signingKeystoreFile != null) {
+                signingConfig signingConfigs.release
+            }
             resValue "string", "proof_of_possesion", "abcd1234"
             resValue "string", "wifi_base_url", "192.168.4.1:80"
             resValue "string", "wifi_device_name_prefix", "PROV_"
