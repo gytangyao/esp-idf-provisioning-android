@@ -52,7 +52,8 @@ jobs:
       - name: 校验 APK 签名
         run: |
           ls -la app/build/outputs/apk/release/
-          APKSIGNER=$(echo "$ANDROID_HOME"/build-tools/*/apksigner)
+          APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner | sort -V | tail -1)
+          echo "使用 $APKSIGNER"
           "$APKSIGNER" verify --print-certs app/build/outputs/apk/release/app-release.apk
 
       - name: 重命名 APK
