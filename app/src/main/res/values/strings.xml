@@ -1,152 +1,152 @@
 <resources>
 
-    <string name="app_name">ESP Provisioning</string>
-    <string name="app_name_ble">ESP BLE Prov</string>
-    <string name="app_name_softap">ESP SoftAP Prov</string>
+    <string name="app_name">ESP 配网</string>
+    <string name="app_name_ble">ESP BLE 配网</string>
+    <string name="app_name_softap">ESP SoftAP 配网</string>
 
     <!-- Screen Titles -->
-    <string name="title_activity_connect_device">Connect to Device</string>
-    <string name="title_activity_pop">Proof of Possession</string>
-    <string name="title_activity_wifi_scan_list">Select Wi-Fi Network</string>
-    <string name="title_activity_wifi_config">Wi-Fi Configuration</string>
-    <string name="title_activity_thread_config">Thread Network Configuration</string>
-    <string name="title_activity_provisioning">Provisioning</string>
-    <string name="title_activity_settings">Settings</string>
-    <string name="title_activity_add_device">Add Device</string>
+    <string name="title_activity_connect_device">连接设备</string>
+    <string name="title_activity_pop">凭证信息 (Proof of Possession)</string>
+    <string name="title_activity_wifi_scan_list">选择 Wi-Fi 网络</string>
+    <string name="title_activity_wifi_config">Wi-Fi 配置</string>
+    <string name="title_activity_thread_config">Thread 网络配置</string>
+    <string name="title_activity_provisioning">配网中</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_add_device">添加设备</string>
 
     <!-- Button Text -->
-    <string name="btn_ok">OK</string>
-    <string name="btn_cancel">Cancel</string>
-    <string name="btn_next">Next</string>
-    <string name="btn_back">Back</string>
-    <string name="btn_provision">Provision</string>
-    <string name="btn_scan_qr_code">Scan QR Code</string>
-    <string name="btn_provision_device">Provision New Device</string>
-    <string name="btn_connect">Connect</string>
-    <string name="btn_connecting">Connecting&#8230;</string>
-    <string name="btn_wifi_settings">Go to Wi-Fi Settings</string>
-    <string name="btn_scan_again">Scan Again</string>
-    <string name="btn_no_qr_code">I don\'t have a QR code</string>
-    <string name="btn_save">Save</string>
-    <string name="btn_change_prefix">Change</string>
-    <string name="btn_yes">Yes</string>
-    <string name="btn_get_permission">Get Permission</string>
-    <string name="btn_try_again">Try Again</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_provision">配网</string>
+    <string name="btn_scan_qr_code">扫描二维码</string>
+    <string name="btn_provision_device">配网新设备</string>
+    <string name="btn_connect">连接</string>
+    <string name="btn_connecting">连接中&#8230;</string>
+    <string name="btn_wifi_settings">前往 Wi-Fi 设置</string>
+    <string name="btn_scan_again">重新扫描</string>
+    <string name="btn_no_qr_code">没有二维码</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_change_prefix">更改</string>
+    <string name="btn_yes">是</string>
+    <string name="btn_get_permission">获取权限</string>
+    <string name="btn_try_again">重试</string>
 
     <!-- Hint Text -->
-    <string name="hint_pop">Proof of Possession</string>
-    <string name="hint_ssid">Network Name</string>
-    <string name="hint_value">Enter Value</string>
-    <string name="hint_password">Password</string>
+    <string name="hint_pop">凭证信息 (PoP)</string>
+    <string name="hint_ssid">网络名称</string>
+    <string name="hint_value">请输入内容</string>
+    <string name="hint_password">密码</string>
 
     <!-- Instruction Strings -->
-    <string name="pop_instruction">Enter your proof of possession PIN for</string>
-    <string name="setup_instructions">To complete setup of your device %1$s, please provide your Home Network\'s credentials.</string>
-    <string name="connect_device_instruction_general">To provision your device, make sure it is turned ON. Connect your mobile phone to the Wi-Fi network with a name like PROV_XXXXXX</string>
-    <string name="connect_device_instruction_specific">To provision your device, make sure it is turned ON. Connect your mobile phone to the Wi-Fi network with the name</string>
+    <string name="pop_instruction">请输入设备的凭证 PIN 码，用于</string>
+    <string name="setup_instructions">要完成设备 %1$s 的设置，请提供您家庭网络的凭证信息。</string>
+    <string name="connect_device_instruction_general">要为您的设备配网，请确保设备已开机。将手机连接到名称类似 PROV_XXXXXX 的 Wi-Fi 网络</string>
+    <string name="connect_device_instruction_specific">要为您的设备配网，请确保设备已开机。将手机连接到名称为以下的 Wi-Fi 网络</string>
 
     <!-- Provisioning Steps Strings -->
-    <string name="prov_step_1">Sending Wi-Fi credentials</string>
-    <string name="prov_step_2">Applying Wi-Fi connection</string>
-    <string name="prov_step_3">Checking provisioning status</string>
-    <string name="error_session_creation">Failed to create session</string>
-    <string name="error_prov_step_1">Failed to send Wi-Fi credentials</string>
-    <string name="error_prov_step_2">Failed to apply Wi-Fi credentials</string>
-    <string name="error_prov_step_3">Failed to provisioning device</string>
-    <string name="error_prov_thread_step_1">Failed to send Thread credentials</string>
-    <string name="error_prov_thread_step_2">Failed to apply Thread credentials</string>
+    <string name="prov_step_1">正在发送 Wi-Fi 凭证</string>
+    <string name="prov_step_2">正在应用 Wi-Fi 连接</string>
+    <string name="prov_step_3">正在检查配网状态</string>
+    <string name="error_session_creation">创建会话失败</string>
+    <string name="error_prov_step_1">发送 Wi-Fi 凭证失败</string>
+    <string name="error_prov_step_2">应用 Wi-Fi 凭证失败</string>
+    <string name="error_prov_step_3">设备配网失败</string>
+    <string name="error_prov_thread_step_1">发送 Thread 凭证失败</string>
+    <string name="error_prov_thread_step_2">应用 Thread 凭证失败</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_provision_landing">Connect to device</string>
-    <string name="connected_to_device_instructions">You are now connected to the device. To provision the device, please enter your Network credentials on the next page.</string>
-    <string name="no_internet_note">To make sure you are really connected to the device, please make sure you accept the system dialog informing you that network has no internet access.</string>
-    <string name="connect_to_device_action">Connect</string>
-    <string name="connected_to_device_action">Provision Network</string>
-    <string name="title_activity_provision_instructions">Provision Instructions</string>
-    <string name="ssid_hint_text">Network Name</string>
-    <string name="password_hint_text">Password</string>
-    <string name="provision">Provision</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_provision_landing">连接设备</string>
+    <string name="connected_to_device_instructions">您已连接到设备。要为设备配网，请在下一页输入您的网络凭证。</string>
+    <string name="no_internet_note">为确保已成功连接到设备，请在系统弹窗提示"该网络无法访问互联网"时选择继续连接。</string>
+    <string name="connect_to_device_action">连接</string>
+    <string name="connected_to_device_action">配置网络</string>
+    <string name="title_activity_provision_instructions">配网说明</string>
+    <string name="ssid_hint_text">网络名称</string>
+    <string name="password_hint_text">密码</string>
+    <string name="provision">配网</string>
 
-    <string name="success_text">Device has been successfully provisioned!</string>
-    <string name="wifi_disconnected_text">Please check the device indicators for provisioning status.</string>
-    <string name="done">Done</string>
+    <string name="success_text">设备配网成功！</string>
+    <string name="wifi_disconnected_text">请查看设备指示灯以确认配网状态。</string>
+    <string name="done">完成</string>
 
-    <string name="enable_bluetooth_instructions">To provision your new device, please make sure that your Phone\'s Bluetooth is turned on and within range of your new device.</string>
-    <string name="enabled_bluetooth_instructions">To provision the device, please enter your Network credentials on the next page.</string>
-    <string name="enable_bluetooth_action">Enable</string>
-    <string name="enabled_bluetooth_action">Provision Network</string>
+    <string name="enable_bluetooth_instructions">要为您的新设备配网，请确保手机蓝牙已开启，并且设备在有效范围内。</string>
+    <string name="enabled_bluetooth_instructions">要为设备配网，请在下一页输入您的网络凭证。</string>
+    <string name="enable_bluetooth_action">开启</string>
+    <string name="enabled_bluetooth_action">配置网络</string>
 
     <!-- Strings used for Progress -->
-    <string name="progress_scanning">Scanning Devices...</string>
-    <string name="progress_get_status">Getting Status</string>
-    <string name="progress_loading">Loading...</string>
-    <string name="progress_thread_networks">Searching thread\nnetworks...</string>
+    <string name="progress_scanning">正在扫描设备…</string>
+    <string name="progress_get_status">正在获取状态</string>
+    <string name="progress_loading">加载中…</string>
+    <string name="progress_thread_networks">正在搜索\nThread 网络…</string>
 
     <!--Error Messages-->
-    <string name="error_title">Error!</string>
-    <string name="error_ble_not_supported">Sorry! BLE is not supported.</string>
-    <string name="error_bluetooth_not_supported">Sorry! Bluetooth is not supported.</string>
-    <string name="error_device_not_supported">Communication failed. Device may not be supported.</string>
-    <string name="error_device_transport_not_supported">Device may not be supported.</string>
-    <string name="error_network_not_found">Network not found.</string>
-    <string name="error_authentication_failed">Wi-Fi Authentication failed.</string>
-    <string name="error_unknown">Device provisioning failed. Reason : Unknown.</string>
-    <string name="error_pop_incorrect">Please retry with correct proof of possession PIN.</string>
-    <string name="error_no_ble_device">No Bluetooth devices found!</string>
-    <string name="error_device_connect_failed">Failed to connect with device.</string>
-    <string name="error_ssid_empty">Network name cannot be empty</string>
-    <string name="error_password_empty">Password cannot be empty</string>
-    <string name="error_provisioning">Reset your board to factory defaults and retry</string>
-    <string name="error_wifi_off">Please turn on Wi-Fi to connect with device.</string>
-    <string name="error_security_mismatch">Security applied for communicating with device does not match configuration setting</string>
-    <string name="error_camera_permission">Camera permission is not given. App will not be able to scan QR code to add device.</string>
-    <string name="error_location_permission">Location permission is not given. It will be required to add BLE or SoftAP devices.</string>
-    <string name="error_no_preferred_creds">No thread network added</string>
-    <string name="error_read_preferred_creds_request_denied">You have denied request for reading thread credentials</string>
-    <string name="error_no_thread_network">No Active Thread Border Router</string>
-    <string name="error_dataset_invalid">Invalid Dataset</string>
-    <string name="error_nearby_devices_permission">Nearby devices permission is not granted. This is required to scan and connect to BLE devices.</string>
+    <string name="error_title">错误！</string>
+    <string name="error_ble_not_supported">抱歉，不支持 BLE。</string>
+    <string name="error_bluetooth_not_supported">抱歉，不支持蓝牙。</string>
+    <string name="error_device_not_supported">通信失败，设备可能不受支持。</string>
+    <string name="error_device_transport_not_supported">设备可能不受支持。</string>
+    <string name="error_network_not_found">未找到该网络。</string>
+    <string name="error_authentication_failed">Wi-Fi 认证失败。</string>
+    <string name="error_unknown">设备配网失败，原因：未知。</string>
+    <string name="error_pop_incorrect">凭证 PIN 码不正确，请重试。</string>
+    <string name="error_no_ble_device">未发现蓝牙设备！</string>
+    <string name="error_device_connect_failed">连接设备失败。</string>
+    <string name="error_ssid_empty">网络名称不能为空</string>
+    <string name="error_password_empty">密码不能为空</string>
+    <string name="error_provisioning">请将设备恢复出厂设置后重试</string>
+    <string name="error_wifi_off">请打开 Wi-Fi 以连接设备。</string>
+    <string name="error_security_mismatch">与设备通信所使用的安全设置不匹配</string>
+    <string name="error_camera_permission">未授予相机权限，应用将无法扫描二维码添加设备。</string>
+    <string name="error_location_permission">未授予位置权限，添加 BLE 或 SoftAP 设备时需要此权限。</string>
+    <string name="error_no_preferred_creds">未添加 Thread 网络</string>
+    <string name="error_read_preferred_creds_request_denied">您已拒绝读取 Thread 凭证的请求</string>
+    <string name="error_no_thread_network">没有活动的 Thread 边界路由器</string>
+    <string name="error_dataset_invalid">数据集无效</string>
+    <string name="error_nearby_devices_permission">未授予"附近设备"权限，扫描和连接 BLE 设备需要此权限。</string>
 
-    <string name="prefix">Prefix :</string>
-    <string name="hint_prefix">Enter Prefix</string>
-    <string name="hint_key">Enter PIN</string>
-    <string name="devices_title">Devices</string>
-    <string name="enter_device_key">Enter Your Proof Of Possession PIN</string>
-    <string name="app_version">App Version</string>
-    <string name="powered_by_esp">Powered by ESPRESSIF</string>
+    <string name="prefix">前缀：</string>
+    <string name="hint_prefix">请输入前缀</string>
+    <string name="hint_key">请输入 PIN 码</string>
+    <string name="devices_title">设备</string>
+    <string name="enter_device_key">请输入您的凭证 PIN 码</string>
+    <string name="app_version">应用版本</string>
+    <string name="powered_by_esp">技术支持：ESPRESSIF</string>
 
-    <string name="join_other_network">Join Other Network</string>
-    <string name="networks">Networks</string>
-    <string name="connect_your_device">Connect to your device</string>
+    <string name="join_other_network">加入其他网络</string>
+    <string name="networks">网络</string>
+    <string name="connect_your_device">连接您的设备</string>
 
-    <string name="dialog_msg_gps">Location services are disabled. Please enable them to continue</string>
-    <string name="dialog_msg_device_selection">Select Device Type</string>
-    <string name="looking_for_qr_code">Looking for QR Code</string>
-    <string name="position_camera_for_qr_code">Please position the camera to point at the QR Code.</string>
-    <string name="dialog_title_network_info">Enter Network Information</string>
-    <string name="dialog_msg_ble_device_disconnection">Device disconnected</string>
+    <string name="dialog_msg_gps">定位服务已关闭，请开启后继续</string>
+    <string name="dialog_msg_device_selection">选择设备类型</string>
+    <string name="looking_for_qr_code">正在寻找二维码</string>
+    <string name="position_camera_for_qr_code">请将摄像头对准二维码。</string>
+    <string name="dialog_title_network_info">输入网络信息</string>
+    <string name="dialog_msg_ble_device_disconnection">设备已断开连接</string>
 
     <!-- Preference Titles -->
-    <string name="device_settings">Device Settings</string>
+    <string name="device_settings">设备设置</string>
 
     <!-- Messages Preferences -->
-    <string name="device_selection_title">Supported Device Types</string>
-    <string name="security_selection_title">Encrypted Communication</string>
-    <string name="username_wifi_pref_title">Sec2 Username for Wi-Fi</string>
-    <string name="username_thread_pref_title">Sec2 Username for Thread</string>
-    <string name="username_selection_title">Username</string>
-    <string name="summary_secured">Secured</string>
-    <string name="summary_unsecured">Unsecured</string>
-    <string name="summary_username">(Applicable for security version 2)</string>
+    <string name="device_selection_title">支持的设备类型</string>
+    <string name="security_selection_title">加密通信</string>
+    <string name="username_wifi_pref_title">Wi-Fi 安全版本2用户名</string>
+    <string name="username_thread_pref_title">Thread 安全版本2用户名</string>
+    <string name="username_selection_title">用户名</string>
+    <string name="summary_secured">已加密</string>
+    <string name="summary_unsecured">未加密</string>
+    <string name="summary_username">（适用于安全版本 2）</string>
 
     <!--Dialog texts-->
-    <string name="dialog_title_camera_permission">Camera Permission Needed</string>
-    <string name="dialog_msg_camera_permission_use">This app requires access to your camera to scan QR code.</string>
-    <string name="dialog_title_location_permission">Location Permission Needed</string>
-    <string name="dialog_msg_location_permission_use">It is required to connect nearby Bluetooth devices.</string>
-    <string name="dialog_title_nearby_devices_permission">Nearby Devices Permission</string>
-    <string name="dialog_msg_nearby_devices_permission_use">Nearby Devices permission is required for scanning and connecting to BLE devices. Please grant it in Settings.</string>
+    <string name="dialog_title_camera_permission">需要相机权限</string>
+    <string name="dialog_msg_camera_permission_use">此应用需要访问您的相机以扫描二维码。</string>
+    <string name="dialog_title_location_permission">需要位置权限</string>
+    <string name="dialog_msg_location_permission_use">连接附近的蓝牙设备需要此权限。</string>
+    <string name="dialog_title_nearby_devices_permission">附近设备权限</string>
+    <string name="dialog_msg_nearby_devices_permission_use">扫描和连接 BLE 设备需要"附近设备"权限，请在设置中授予该权限。</string>
 
-    <string name="wifi_reset_message">WiFi has been reset. Please reselect the WiFi credentials.</string>
+    <string name="wifi_reset_message">Wi-Fi 已重置，请重新选择 Wi-Fi 凭证。</string>
 
 </resources>
